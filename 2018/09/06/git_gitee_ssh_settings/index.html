@@ -116,10 +116,12 @@
 <meta property="og:site_name" content="wuyuhong">
 <meta property="og:description" content="简介  今天在配置github.com的ssh的时候 由于以前配置了gitee.com 所以单一的id_rsa文件就冲突了。  踩了很多坑,最后还是成功了 特此记录一下 😝1.同时支持两个不同的网站的 id_rsa文件2.处理各种配置中的异常信息 生成和配置rsa1ssh-keygen -t rsa -C &amp;quot;username@gitee.com&amp;quot; 生成后更改名称 id_rsa">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-07T02:49:37.813Z">
+<meta property="og:image" content="http://yoursite.com/imgs/dream.png">
+<meta property="og:updated_time" content="2018-09-07T03:49:54.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github.com和gitee.com 同时支持ssh">
 <meta name="twitter:description" content="简介  今天在配置github.com的ssh的时候 由于以前配置了gitee.com 所以单一的id_rsa文件就冲突了。  踩了很多坑,最后还是成功了 特此记录一下 😝1.同时支持两个不同的网站的 id_rsa文件2.处理各种配置中的异常信息 生成和配置rsa1ssh-keygen -t rsa -C &amp;quot;username@gitee.com&amp;quot; 生成后更改名称 id_rsa">
+<meta name="twitter:image" content="http://yoursite.com/imgs/dream.png">
 
 
 
@@ -368,7 +370,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-07 10:49:37" itemprop="dateModified" datetime="2018-09-07T10:49:37+08:00">2018-09-07</time>
+                <time title="修改时间：2018-09-07 11:49:54" itemprop="dateModified" datetime="2018-09-07T11:49:54+08:00">2018-09-07</time>
               
             
           </span>
@@ -428,6 +430,7 @@
 <h2 id="没有权限异常"><a href="#没有权限异常" class="headerlink" title="没有权限异常"></a>没有权限异常</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">softwaredeMacBook-Pro:.ssh software$ sudo ssh -T git@github.com</span><br><span class="line">git@github.com: Permission denied (publickey).</span><br></pre></td></tr></table></figure>
 <h2 id="没有权限异常-解决方法"><a href="#没有权限异常-解决方法" class="headerlink" title="没有权限异常 解决方法"></a>没有权限异常 解决方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#shh-add 添加对应的私钥文件 id_rsa_git</span><br><span class="line"></span><br><span class="line">softwaredeMacBook-Pro:.ssh software$ ssh-add ~/.ssh/id_rsa_git</span><br><span class="line">Identity added: /Users/software/.ssh/id_rsa_git (/Users/software/.ssh/id_rsa_git)</span><br></pre></td></tr></table></figure>
 <h2 id="Success"><a href="#Success" class="headerlink" title="Success"></a>Success</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">softwaredeMacBook-Pro:.ssh software$ sudo ssh -T git@github.com</span><br><span class="line">Hi ChinaWuYuHong! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<p>what’s up?<br><img src="/imgs/dream.png" alt="“图片描述”"></p>
 
       
     </div>
