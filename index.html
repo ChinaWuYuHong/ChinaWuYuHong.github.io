@@ -529,7 +529,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-14 14:42:53" itemprop="dateModified" datetime="2018-09-14T14:42:53+08:00">2018-09-14</time>
+                <time title="修改时间：2018-09-14 14:55:36" itemprop="dateModified" datetime="2018-09-14T14:55:36+08:00">2018-09-14</time>
               
             
           </span>
@@ -582,7 +582,7 @@
       
         
           
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">softwaredeMacBook-Pro:linux_shell software$ mkdir mkdir_p/hello_p</span><br><span class="line">mkdir: mkdir_p: No such file or directory</span><br><span class="line">softwaredeMacBook-Pro:linux_shell software$ mkdir -p  mkdir_p/hello_p</span><br><span class="line">softwaredeMacBook-Pro:linux_shell software$ ls</span><br><span class="line">mkdir_p</span><br><span class="line">softwaredeMacBook-Pro:linux_shell software$ cd mkdir_p/</span><br><span class="line">softwaredeMacBook-Pro:mkdir_p software$ ls</span><br><span class="line">hello_p</span><br><span class="line">softwaredeMacBook-Pro:mkdir_p software$</span><br></pre></td></tr></table></figure>
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">softwaredeMacBook-Pro:linux_shell software$ mkdir mkdir_p/hello_p</span><br><span class="line">mkdir: mkdir_p: No such file or directory</span><br><span class="line"></span><br><span class="line">softwaredeMacBook-Pro:linux_shell software$ mkdir -p  mkdir_p/hello_p</span><br><span class="line"></span><br><span class="line">softwaredeMacBook-Pro:linux_shell software$ ls</span><br><span class="line">mkdir_p</span><br><span class="line">softwaredeMacBook-Pro:linux_shell software$ cd mkdir_p/</span><br><span class="line">softwaredeMacBook-Pro:mkdir_p software$ ls</span><br><span class="line">hello_p</span><br><span class="line"></span><br><span class="line">softwaredeMacBook-Pro:mkdir_p software$</span><br></pre></td></tr></table></figure>
 <p>mkdir -p 在没有mkdir_p文件夹的情况下 会自动创建<br>mkdir 会报错 mkdir_p: No such file or directory</p>
 
           
@@ -700,7 +700,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-07 11:49:54" itemprop="dateModified" datetime="2018-09-07T11:49:54+08:00">2018-09-07</time>
+                <time title="修改时间：2018-09-14 14:56:29" itemprop="dateModified" datetime="2018-09-14T14:56:29+08:00">2018-09-14</time>
               
             
           </span>
@@ -752,7 +752,7 @@
 
       
         
-          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>  今天在配置github.com的ssh的时候 由于以前配置了gitee.com 所以单一的id_rsa文件就冲突了。<br>  踩了很多坑,最后还是成功了 特此记录一下 😝<br>1.同时支持两个不同的网站的 id_rsa文件<br>2.处理各种配置中的异常信息</p>
+          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>  今天在配置github.com的ssh的时候 由于以前配置了gitee.com 所以单一的id_rsa文件就冲突了。<br>  踩了很多坑,最后还是成功了 特此记录一下<br>1.同时支持两个不同的网站的 id_rsa文件<br>2.处理各种配置中的异常信息</p>
 <h2 id="生成和配置rsa"><a href="#生成和配置rsa" class="headerlink" title="生成和配置rsa"></a>生成和配置rsa</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;username@gitee.com&quot;</span><br></pre></td></tr></table></figure>
 <p>生成后更改名称 id_rsa_git id_rsa_git.pub id_rsa_gitee id_rsa_gitee.pub<br>
           <!--noindex-->
