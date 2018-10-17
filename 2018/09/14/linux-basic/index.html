@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="wuyuhong">
 <meta property="og:description" content="文件操作123456789101112131415161718#创建文件夹mkdir hello.txt#创建文件touch hello.txt#编辑文件vi hello.txt#查看文件cat hello.txt#复制文件cp hello.txt new.txt#复制文件夹(-r 递归)cp -r myproject/ newproject/#删除文件(-f 强制)rm -f hello.txt">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-17T08:05:29.711Z">
+<meta property="og:updated_time" content="2018-10-16T03:08:54.463Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux mkdir -p与mkdir的区别">
 <meta name="twitter:description" content="文件操作123456789101112131415161718#创建文件夹mkdir hello.txt#创建文件touch hello.txt#编辑文件vi hello.txt#查看文件cat hello.txt#复制文件cp hello.txt new.txt#复制文件夹(-r 递归)cp -r myproject/ newproject/#删除文件(-f 强制)rm -f hello.txt">
@@ -368,7 +368,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-17 16:05:29" itemprop="dateModified" datetime="2018-09-17T16:05:29+08:00">2018-09-17</time>
+                <time title="修改时间：2018-10-16 11:08:54" itemprop="dateModified" datetime="2018-10-16T11:08:54+08:00">2018-10-16</time>
               
             
           </span>
@@ -421,7 +421,7 @@
       
         <p>文件操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#创建文件夹</span></span><br><span class="line">mkdir hello.txt</span><br><span class="line"><span class="comment">#创建文件</span></span><br><span class="line">touch hello.txt</span><br><span class="line"><span class="comment">#编辑文件</span></span><br><span class="line">vi hello.txt</span><br><span class="line"><span class="comment">#查看文件</span></span><br><span class="line">cat hello.txt</span><br><span class="line"><span class="comment">#复制文件</span></span><br><span class="line">cp hello.txt new.txt</span><br><span class="line"><span class="comment">#复制文件夹(-r 递归)</span></span><br><span class="line">cp -r myproject/ newproject/</span><br><span class="line"><span class="comment">#删除文件(-f 强制)</span></span><br><span class="line">rm -f hello.txt</span><br><span class="line"><span class="comment">#删除文件夹(-r 递归)</span></span><br><span class="line">rm -r myproject/</span><br><span class="line"><span class="comment">#移动文件（-f 强制覆盖重复名称的文件）</span></span><br><span class="line">mv -f newproject/ /home</span><br></pre></td></tr></table></figure></p>
 <p>文件属性<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#文件属性信息</span></span><br><span class="line">ls -l</span><br><span class="line"></span><br><span class="line">lrwxr-xr-x@  1 root  wheel    11 10 26  2017 etc -&gt; private/etc</span><br><span class="line">dr-xr-xr-x   2 root  wheel     1  9 13 16:57 home</span><br><span class="line">-rw-r--r--   1 root  wheel   313  9  1  2017 installer.failurerequests</span><br><span class="line"></span><br><span class="line"><span class="comment">#第一个字符 l:链接 d:文件夹 -:文件 b:存储设备 c:串行设备(鼠标 键盘)</span></span><br><span class="line"><span class="comment">#rwx:创建该文件的用户的权限(可读可写可执行)--属主权限</span></span><br><span class="line"><span class="comment">#rwx:与创建该文件的用户属于同一组的用户的权限--属组权限</span></span><br><span class="line"><span class="comment">#rwx:与创建该文件的用户属于不同组的用户的权限--其他用户权限</span></span><br><span class="line"><span class="comment">#2 root  wheel     1  9 13 16:57 home</span></span><br><span class="line"><span class="comment">#2:该文件下有多少个文件</span></span><br><span class="line"><span class="comment">#root:创建该文件的用户</span></span><br><span class="line"><span class="comment">#wheel:该用户所属组</span></span><br><span class="line"><span class="comment">#1:文件体积</span></span><br><span class="line"><span class="comment">#9 13 16:57:时间</span></span><br><span class="line"><span class="comment">#home:文件名称</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#修改文件权限</span></span><br><span class="line">chmod 700 hello.txt</span><br><span class="line"><span class="comment">#r:4  w:2 x:1 -:0</span></span><br><span class="line"><span class="comment">#7:可读 可写 可执行</span></span><br><span class="line"></span><br><span class="line">chmod 766 hello.txt</span><br></pre></td></tr></table></figure></p>
-<p>防火墙firewall<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#防火墙状态</span></span><br><span class="line">firewall-cmd --state</span><br><span class="line"><span class="comment">#开启防火墙</span></span><br><span class="line">systemctl start firewalled</span><br><span class="line"><span class="comment">#关闭</span></span><br><span class="line">systemctl stop firewalled</span><br><span class="line"><span class="comment">#重启</span></span><br><span class="line">systemctl restart firewalled</span><br><span class="line"></span><br><span class="line"><span class="comment">#开启端口  --permanent : 长期有效-重启后依然生效</span></span><br><span class="line">firewall-cmd  --permanent --add-port=3000/tcp</span><br><span class="line"><span class="comment">#开启一段端口 --permanent : 长期有效-重启后依然生效</span></span><br><span class="line">firewall-cmd --permanent --add-port=3000-3005/tcp</span><br><span class="line"><span class="comment">#查看防火墙开放端口</span></span><br><span class="line">firewall-cmd --permanent --list-ports</span><br><span class="line"><span class="comment">#删除防火墙开放的端口 不能单独移除一段端口中的其中一个端口(不能 firewall-cmd --permanent --remove-port=3001/tcp 这个代码不会生效)因为这个是一条端口规则</span></span><br><span class="line">firewall-cmd --permanent --remove-port=3000/tcp</span><br><span class="line"><span class="comment">#重新加载firewall-cmd 的配置</span></span><br><span class="line">firewall-cmd --reload</span><br><span class="line"><span class="comment">#查看哪些服务在使用互联网</span></span><br><span class="line">firewall-cmd --permanent --list-services</span><br></pre></td></tr></table></figure></p>
+<p>防火墙firewall<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#防火墙状态</span></span><br><span class="line">firewall-cmd --state</span><br><span class="line"><span class="comment">#开启防火墙</span></span><br><span class="line">systemctl start firewalled</span><br><span class="line"><span class="comment">#关闭</span></span><br><span class="line">systemctl stop firewalled</span><br><span class="line"><span class="comment">#重启</span></span><br><span class="line">systemctl restart firewalled</span><br><span class="line">systemctl restart firewalld.service</span><br><span class="line"></span><br><span class="line"><span class="comment">#开启端口  --permanent : 长期有效-重启后依然生效</span></span><br><span class="line">firewall-cmd  --permanent --add-port=3000/tcp</span><br><span class="line"><span class="comment">#开启一段端口 --permanent : 长期有效-重启后依然生效</span></span><br><span class="line">firewall-cmd --permanent --add-port=3000-3005/tcp</span><br><span class="line"><span class="comment">#查看防火墙开放端口</span></span><br><span class="line">firewall-cmd --permanent --list-ports</span><br><span class="line"><span class="comment">#删除防火墙开放的端口 不能单独移除一段端口中的其中一个端口(不能 firewall-cmd --permanent --remove-port=3001/tcp 这个代码不会生效)因为这个是一条端口规则</span></span><br><span class="line">firewall-cmd --permanent --remove-port=3000/tcp</span><br><span class="line"><span class="comment">#重新加载firewall-cmd 的配置</span></span><br><span class="line">firewall-cmd --reload</span><br><span class="line"><span class="comment">#查看哪些服务在使用互联网</span></span><br><span class="line">firewall-cmd --permanent --list-services</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -528,7 +528,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -547,7 +547,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -572,7 +574,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
